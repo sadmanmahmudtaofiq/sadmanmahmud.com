@@ -41,7 +41,7 @@
 
 /*========== WebKit scrollbar styling ==========*/
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -90,8 +90,6 @@ body.dark .shape {
 
 html {
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: hsl((var--hue), 20%, 65%) hsl((var--hue), 20%, 85%);
 }
 
 ::selection {

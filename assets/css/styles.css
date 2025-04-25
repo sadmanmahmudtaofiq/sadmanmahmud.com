@@ -331,6 +331,7 @@ textarea {
   left: 0;
   width: 100%;
   z-index: 1000;
+  transition: all 0.2s var(--transition);
 }
 
 .nav {

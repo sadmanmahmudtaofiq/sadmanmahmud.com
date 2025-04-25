@@ -56,7 +56,7 @@ const scrollActive = () => {
 };
 
 window.addEventListener("scroll", scrollActive);
-scrollActive(); // ✅ Add this line to run on page load
+scrollActive();
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper(".services-swiper", {
@@ -241,5 +241,43 @@ document.querySelectorAll(`input[name="body-theme"]`).forEach((input) => {
     document.body.classList.remove("light", "dark");
 
     document.body.classList.add(input.value);
+  });
+});
+
+// Apply saved theme on load
+window.addEventListener("DOMContentLoaded", () => {
+  const savedHue = localStorage.getItem("selected-hue");
+  const savedTheme = localStorage.getItem("selected-theme");
+
+  if (savedHue) {
+    document.documentElement.style.setProperty("--hue", savedHue);
+    document.querySelectorAll(".style-switcher-color").forEach((el) => {
+      if (el.style.getPropertyValue("--hue") === savedHue) {
+        el.classList.add("active-color");
+      }
+    });
+  }
+
+  if (savedTheme) {
+    document.body.classList.remove("light", "dark");
+    document.body.classList.add(savedTheme);
+    document.querySelectorAll(`input[name="body-theme"]`).forEach((input) => {
+      input.checked = input.value === savedTheme;
+    });
+  }
+});
+
+// Save color to localStorage
+colors.forEach((color) => {
+  color.addEventListener("click", () => {
+    const activeColor = color.style.getPropertyValue("--hue");
+    localStorage.setItem("selected-hue", activeColor);
+  });
+});
+
+// Save theme (light/dark) to localStorage
+document.querySelectorAll(`input[name="body-theme"]`).forEach((input) => {
+  input.addEventListener("click", () => {
+    localStorage.setItem("selected-theme", input.value);
   });
 });

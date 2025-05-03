@@ -313,7 +313,7 @@ textarea {
 }
 
 .container:not(.nav, .home-container) {
-  padding-block: 3.75rem;
+  padding-block: 2rem;
 }
 
 .grid {
@@ -526,6 +526,7 @@ textarea {
   position: relative;
   z-index: 10;
   aspect-ratio: 21/25;
+  margin-bottom: -10px;
   object-fit: cover;
 }
 
@@ -1050,7 +1051,7 @@ textarea {
 .footer {
   border-top: 1px solid var(--shadow-color);
   background-color: var(--container-color);
-  padding-block: 2rem;
+  /* padding-block: 2rem; */
 }
 
 .footer-container {

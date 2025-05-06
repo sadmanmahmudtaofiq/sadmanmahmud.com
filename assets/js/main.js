@@ -253,11 +253,13 @@ window.addEventListener("DOMContentLoaded", () => {
   if (savedHue) {
     document.documentElement.style.setProperty("--hue", savedHue);
     document.querySelectorAll(".style-switcher-color").forEach((el) => {
+      el.classList.remove("active-color"); // Remove from all first
       if (el.style.getPropertyValue("--hue") === savedHue) {
-        el.classList.add("active-color");
+        el.classList.add("active-color"); // Add to matching one only
       }
     });
   }
+  
 
   if (savedTheme) {
     document.body.classList.remove("light", "dark");
@@ -282,3 +284,8 @@ document.querySelectorAll(`input[name="body-theme"]`).forEach((input) => {
     localStorage.setItem("selected-theme", input.value);
   });
 });
+
+
+/* 
+  okay, I wanna make this if I hover this bottom red color box and clicked and move this the top % will change to how % I change by the hover 
+*/

@@ -308,21 +308,17 @@ function setupFooterDate() {
 }
 
 /*=============== INITIALIZE ALL FUNCTIONS ===============*/
-function initializeWebsiteFeatures() {
-  setupMenuToggle();
-  setupRemoveMenuMobile();
-  setupScrollHeader();
-  setupScrollActive();
-  setupServicesSwiper();
-  setupMixitupFilterPortfolio();
-  setupResumeAccordion();
-  setupTestimonialsSwiper();
-  setupEmailJS();
-  setupStyleSwitcher();
-  setupThemeColors();
-  setupLightDarkMode();
-  setupFooterDate();
-}
 
-// Initialize all features when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", initializeWebsiteFeatures);
+setupMenuToggle();
+setupRemoveMenuMobile();
+setupScrollHeader();
+setupScrollActive();
+setupServicesSwiper();
+setupMixitupFilterPortfolio();
+setupResumeAccordion();
+setupTestimonialsSwiper();
+setupEmailJS();
+setupStyleSwitcher();
+setupThemeColors();
+setupLightDarkMode();
+setupFooterDate();

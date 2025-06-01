@@ -1412,7 +1412,6 @@ textarea {
 .hidden {
   opacity: 0;
   transition: all 1s;
-  /* filter: blur(5px); */
   transform: translateX(-10%);
 }
 
@@ -1428,3 +1427,15 @@ textarea {
   transform: translateX(0);
 }
 
+/*  */
+
+.hidden2 {
+  opacity: 0;
+  transition: all 0.8s;
+  margin-top: -10%;
+}
+
+.show2 {
+  opacity: 1;
+  margin-top: 0;
+}

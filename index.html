@@ -19,6 +19,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/html.js"></script>
 
     <title>Sadman Mahmud</title>
   </head>
@@ -241,12 +242,13 @@
       </section>
 
       <!--=============== SERVICES ===============-->
-      <section class="services section" id="services">
+      <section class="services section hidden" id="services">
         <h2 class="section-title" data-title="My Services">What I Do</h2>
 
         <div class="container">
           <div class="swiper services-swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" id="swiperWrapper">
+              
               <div class="swiper-slide card">
                 <h4 class="services-subtitle">Web Development</h4>
 
@@ -324,6 +326,7 @@
                   See Pricing <i class="ri-arrow-right-line link-icon"></i>
                 </a>
               </div>
+               
             </div>
 
             <div class="swiper-pagination"></div>
@@ -341,7 +344,7 @@
       </section>
 
       <!--=============== SKILLS ===============-->
-      <section class="skills section" id="skills">
+      <section class="skills section hidden" id="skills">
         <h2 class="section-title" data-title="My Talent">
           Professional Skills
         </h2>
@@ -443,7 +446,7 @@
       </section>
 
       <!--=============== WORK ===============-->
-      <section class="work section" id="works">
+      <section class="work section hidden" id="works">
         <h2 class="section-title" data-title="My Cases">Portfolio</h2>
 
         <div class="container" id="work-container">
@@ -600,7 +603,7 @@
       </section>
 
       <!--=============== RESUME ===============-->
-      <section class="resume section" id="resume">
+      <section class="resume section hidden" id="resume">
         <h2 class="section-title" data-title="My Story">Resume</h2>
 
         <div class="resume-container container grid">
@@ -757,7 +760,7 @@
       </section>
 
       <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section" id="testimonials">
+      <section class="testimonial section hidden" id="testimonials">
         <h2 class="section-title" data-title="My Customers Say">
           Testimonials
         </h2>
@@ -769,107 +772,103 @@
                 <div class="testimonial-icon">
                   <i class="ri-double-quotes-r"></i>
                 </div>
-
+            
                 <img
                   src="./assets/img/testimonial1.jpg"
                   loading="lazy"
                   alt="testimonial-img"
                   class="testimonial-img"
                 />
-
+            
                 <p class="testimonial-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Working with this team has been an absolute pleasure. Their professionalism and dedication to excellence exceeded our expectations.
                 </p>
-
+            
                 <h3 class="testimonial-name">Barbara Wilson</h3>
                 <span class="testimonial-author">CEO Company</span>
               </div>
-
+            
               <div class="swiper-slide card">
                 <div class="testimonial-icon">
                   <i class="ri-double-quotes-r"></i>
                 </div>
-
+            
                 <img
                   src="./assets/img/testimonial2.jpg"
                   alt="testimonial-img"
                   loading="lazy"
                   class="testimonial-img"
                 />
-
+            
                 <p class="testimonial-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  The design work was outstanding—creative, on-brand, and delivered ahead of schedule. I highly recommend their services.
                 </p>
-
+            
                 <h3 class="testimonial-name">Charlie Smith</h3>
                 <span class="testimonial-author">Designer</span>
               </div>
-
+            
               <div class="swiper-slide card">
                 <div class="testimonial-icon">
                   <i class="ri-double-quotes-r"></i>
                 </div>
-
+            
                 <img
                   src="./assets/img/testimonial3.jpg"
                   alt="testimonial-img"
                   loading="lazy"
                   class="testimonial-img"
                 />
-
+            
                 <p class="testimonial-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Their attention to detail and ability to understand our vision truly set them apart. It was a seamless experience from start to finish.
                 </p>
-
+            
                 <h3 class="testimonial-name">Roy Wang</h3>
                 <span class="testimonial-author">Manager GYM</span>
               </div>
-
+            
               <div class="swiper-slide card">
                 <div class="testimonial-icon">
                   <i class="ri-double-quotes-r"></i>
                 </div>
-
+            
                 <img
                   src="./assets/img/testimonial4.jpg"
                   alt="testimonial-img"
                   loading="lazy"
                   class="testimonial-img"
                 />
-
+            
                 <p class="testimonial-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  As a founder, I’ve worked with many partners. This team stands out for their creativity, commitment, and flawless execution.
                 </p>
-
+            
                 <h3 class="testimonial-name">Jennifer Smith</h3>
                 <span class="testimonial-author">CEO & Founder</span>
               </div>
-
+            
               <div class="swiper-slide card">
                 <div class="testimonial-icon">
                   <i class="ri-double-quotes-r"></i>
                 </div>
-
+            
                 <img
                   src="./assets/img/testimonial5.jpg"
                   alt="testimonial-img"
                   loading="lazy"
                   class="testimonial-img"
                 />
-
+            
                 <p class="testimonial-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  They captured the essence of our brand beautifully. Every shot told a story, and the results were beyond impressive.
                 </p>
-
+            
                 <h3 class="testimonial-name">Paul Freeman</h3>
                 <span class="testimonial-author">Photographer</span>
               </div>
             </div>
+            
             <div class="swiper-pagination"></div>
           </div>
 
@@ -885,7 +884,7 @@
       </section>
 
       <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact">
+      <section class="contact section hidden" id="contact">
         <h2 class="section-title" data-title="My Customers Say">Contact Me</h2>
 
         <div class="contact-container container grid">

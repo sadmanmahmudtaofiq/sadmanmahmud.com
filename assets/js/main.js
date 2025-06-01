@@ -309,10 +309,11 @@ function setupFooterDate() {
 /*=============== SCROLL ANIMATION  ===============*/
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
+    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-    }
-    /*     else {
+    } 
+/*     else {
       entry.target.classList.remove("show");
     } */
   });
@@ -331,26 +332,9 @@ const observer2 = new IntersectionObserver((entries) => {
   });
 });
 
-const homeImage = document.querySelector(".home-profile");
-const homeBanner = document.querySelector(".home-banner");
+document.querySelectorAll('.hidden2').forEach((el) => observer2.observe(el));
 
-if (homeImage && homeBanner) {
-  homeImage.addEventListener("load", () => {
-    homeBanner.classList.add("show2");
-  });
 
-  if (homeImage.complete) {
-    homeBanner.classList.add("show2");
-  }
-}
-
-document.querySelectorAll(".hidden2").forEach((el) => observer2.observe(el));
-
-const test = document.querySelector(".home-profile");
-
-test.addEventListener("load", () => {
-  console.log("object");
-});
 
 /*=============== INITIALIZE ALL FUNCTIONS ===============*/
 

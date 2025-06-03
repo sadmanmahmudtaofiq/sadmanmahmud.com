@@ -312,8 +312,8 @@ const observer = new IntersectionObserver((entries) => {
     console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-    } 
-/*     else {
+    }
+    /*     else {
       entry.target.classList.remove("show");
     } */
   });
@@ -332,22 +332,24 @@ const observer2 = new IntersectionObserver((entries) => {
   });
 });
 
-document.querySelectorAll('.hidden2').forEach((el) => observer2.observe(el));
-
-
+document.querySelectorAll(".hidden2").forEach((el) => observer2.observe(el));
 
 /*=============== INITIALIZE ALL FUNCTIONS ===============*/
 
-setupMenuToggle();
-setupRemoveMenuMobile();
-setupScrollHeader();
-setupScrollActive();
-setupServicesSwiper();
-setupMixitupFilterPortfolio();
-setupResumeAccordion();
-setupTestimonialsSwiper();
-setupEmailJS();
-setupStyleSwitcher();
-setupThemeColors();
-setupLightDarkMode();
-setupFooterDate();
+(() => {
+  setupMenuToggle();
+  setupRemoveMenuMobile();
+  setupScrollHeader();
+  setupScrollActive();
+  setupServicesSwiper();
+  setupMixitupFilterPortfolio();
+  setupResumeAccordion();
+  setupTestimonialsSwiper();
+  setupEmailJS();
+  setupStyleSwitcher();
+  setupThemeColors();
+  setupLightDarkMode();
+  setupFooterDate();
+})();
+
+console.log("Done it!");

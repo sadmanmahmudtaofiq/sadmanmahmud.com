@@ -306,29 +306,6 @@ function setupFooterDate() {
   }
 }
 
-/*=============== SCROLL ANIMATION  ===============*/
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
-
-const hiddenElement = document.querySelectorAll(".hidden");
-hiddenElement.forEach((el) => observer.observe(el));
-
-/* ! */
-
-const observer2 = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show2");
-    }
-  });
-});
-
-document.querySelectorAll(".hidden2").forEach((el) => observer2.observe(el));
 
 /*=============== INITIALIZE ALL FUNCTIONS ===============*/
 
